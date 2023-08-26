@@ -66,4 +66,5 @@ Your submission should look like:
 |FAITH BERIDA|NIGERIA|  |
 |RICHMOND E.Y. ABAKE|GHANA|  |
 |RICHMOND TETTEH| GHANA|    |
-|JOSEPH GIKUBU| |   |
+|JOSEPH GIKUBU|     |   |
+|MARIE GRACE KAGAJU |   |   |
