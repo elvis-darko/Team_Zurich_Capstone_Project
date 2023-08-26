@@ -53,7 +53,7 @@ A streamlit app was added for further exploration of the model. The streamlit ap
 
 - Run the demo app (being at the root of the repository):
         
-        Streamlit run st_app.py
+        Streamlit run app.py
 
 
 ## EVALUATION
