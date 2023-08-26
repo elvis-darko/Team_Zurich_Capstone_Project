@@ -48,6 +48,12 @@ Use these recommended steps to set up your local machine for this project:
 
             python -m pip install -r requirements.txt 
 
+## Run Streamlit App
+A streamlit app was added for further exploration of the model. The streamlit app provides a simple Graphic User Interface where predicitons can be made from inputs.
+
+- Run the demo app (being at the root of the repository):
+        
+        Streamlit run st_app.py
 
 
 ## EVALUATION
