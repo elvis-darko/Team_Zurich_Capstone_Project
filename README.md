@@ -18,7 +18,7 @@ The datasets for this project are the train and test data found in the dataset f
 **Train data :**This similar to the train data, but without the Churn column. You will use this file to test your model on.
 
 The dataset has 19 variables. The following are the definitions of variables found in the datasets:
-`user_id` The unique identification number of a client
+`user_id` The unique identification number of a client<br />
 `REGION` The location of each client
 `TENURE` Duration of the network usage
 `MONTANT` The top-up amount
