@@ -13,13 +13,14 @@ This solution will help this telecom company to better serve their customers by 
 ## NOTES ON DATASETS
 The datasets for this project are the train and test data found in the dataset folder.
 <br />
-**Test data :**Contains information about 1 million customers. There is a column called CHURN that indicates if a client churned or did not churn. This is the target. You must estimate the likelihood that these clients churned. You will use this file to train your model.
 
-**Train data :**This similar to the train data, but without the Churn column. You will use this file to test your model on.
+**Test data :** Contains information about 1 million customers. There is a column called CHURN that indicates if a client churned or did not churn. This is the target. You must estimate the likelihood that these clients churned. You will use this file to train your model.
 
-The dataset has 19 variables. The following are the definitions of variables found in the datasets:
+**Train data :** This similar to the train data, but without the Churn column. You will use this file to test your model on.
+
+The dataset has 19 variables. The following are the definitions of variables found in the datasets:<br />
 `user_id` The unique identification number of a client<br />
-`REGION` The location of each client
+`REGION` The location of each client<br />
 `TENURE` Duration of the network usage
 `MONTANT` The top-up amount
 `FREQUENCE_RECH` The number of times the customer refilled
