@@ -11,7 +11,7 @@ This solution will help this telecom company to better serve their customers by 
 
 
 ## NOTES ON DATASETS
-The datasets for this project are the train and test data found in the dataset folder.
+The Test data can found in the dataset folder. However due to restrictions with uploading more than 100MB of a file with GitHub, the Train dataset can be found and downloaded from this OneDrive : [Train data](https://1drv.ms/u/s!Aqe0ZlYhhcZygTx9MNWcJq75Iow_?e=YVKzxj)
 <br />
 
 **Train data :** Contains information about 1 million customers. There is a column called CHURN that indicates if a client churned or did not churn. This is the target. You must estimate the likelihood that these clients churned. You will use this file to train your model.
