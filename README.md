@@ -14,30 +14,30 @@ This solution will help this telecom company to better serve their customers by 
 The datasets for this project are the train and test data found in the dataset folder.
 <br />
 
-**Test data :** Contains information about 1 million customers. There is a column called CHURN that indicates if a client churned or did not churn. This is the target. You must estimate the likelihood that these clients churned. You will use this file to train your model.
+**Train data :** Contains information about 1 million customers. There is a column called CHURN that indicates if a client churned or did not churn. This is the target. You must estimate the likelihood that these clients churned. You will use this file to train your model.
 
-**Train data :** This similar to the train data, but without the Churn column. You will use this file to test your model on.
+**Test data :** This similar to the train data, but without the Churn column. You will use this file to test your model.
 
 The dataset has 19 variables. The following are the definitions of variables found in the datasets:<br />
 `user_id` The unique identification number of a client<br />
 `REGION` The location of each client<br />
-`TENURE` Duration of the network usage
-`MONTANT` The top-up amount
-`FREQUENCE_RECH` The number of times the customer refilled
-`REVENUE`The monthly income of each client
-`ARPU_SEGMENT`Income over 90 days / 3
-`FREQUENCE` The number of times the client has made an income
-`DATA_VOLUME` The number of connections
-`ON_NET`Inter Expresso calls
-`ORANGE`calls to Orange network
-`TIGO`calls to Tigo network
-`ZONE1` calls to zones1
-`ZONE2`calls to zones2
-`MRG`a client who is going
-`REGULARITY`The number of times the client is active for 90 days
-`TOP_PACK`the most active packs
-`FREQ_TOP_PACK`The number of times the client has activated the top pack packages
-`CHURN` Whether a client still patronizes the network or not. This is the variable to predict - Target
+`TENURE` Duration of the network usage<br />
+`MONTANT` The top-up amount<br />
+`FREQUENCE_RECH` The number of times the customer refilled<br />
+`REVENUE`The monthly income of each client<br />
+`ARPU_SEGMENT`Income over 90 days / 3<br />
+`FREQUENCE` The number of times the client has made an income<br />
+`DATA_VOLUME` The number of connections<br />
+`ON_NET`Inter Expresso calls<br />
+`ORANGE`calls to Orange network<br />
+`TIGO`calls to Tigo network<br />
+`ZONE1` calls to zones1<br />
+`ZONE2`calls to zones2<br />
+`MRG`a client who is going<br />
+`REGULARITY`The number of times the client is active for 90 days<br />
+`TOP_PACK`the most active packs<br />
+`FREQ_TOP_PACK`The number of times the client has activated the top pack packages<br />
+`CHURN` Whether a client still patronizes the network or not. This is the variable to predict - Target<br />
 
 
 
