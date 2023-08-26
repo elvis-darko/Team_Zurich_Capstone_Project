@@ -137,5 +137,5 @@ Here are some ressources you would read to have a good understanding of FastAPI 
 |FAITH BERIDA|NIGERIA|  |
 |RICHMOND E.Y. ABAKE|GHANA|  |
 |RICHMOND TETTEH| GHANA|    |
-|JOSEPH GIKUBU|     |   |
+|JOSEPH GIKUBU|     | KENYA  |
 |MARIE GRACE KAGAJU |   |   |
