@@ -86,6 +86,16 @@ Your submission should look like:
             000081dd3245e6869a4a9c574c7050e7bb84c2c8      0.37
 
 
+## Resources
+Here are some ressources you would read to have a good understanding of FastAPI :
+- [Tutorial - User Guide](https://fastapi.tiangolo.com/tutorial/)
+- [Video - Building a Machine Learning API in 15 Minutes ](https://youtu.be/C82lT9cWQiA)
+- [FastAPI for Machine Learning: Live coding an ML web application](https://www.youtube.com/watch?v=_BZGtifh_gw)
+- [Video - Deploy ML models with FastAPI, Docker, and Heroku ](https://www.youtube.com/watch?v=h5wLuVDr0oc)
+- [FastAPI Tutorial Series](https://www.youtube.com/watch?v=tKL6wEqbyNs&list=PLShTCj6cbon9gK9AbDSxZbas1F6b6C_Mx)
+- [Http status codes](https://www.linkedin.com/feed/update/urn:li:activity:7017027658400063488?utm_source=share&utm_medium=member_desktop)
+- 
+
 ## CONTRIBUTORS
 | NAME  |   COUNTRY |   E-MAIL  |
 |:------|:----------|:----------|
