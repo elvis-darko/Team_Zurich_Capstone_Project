@@ -142,4 +142,3 @@ Here are some ressources you would read to have a good understanding of FastAPI 
 |RICHMOND TETTEH| GHANA|    |
 |JOSEPH GIKUBU|     | KENYA  |
 |MARIE GRACE KAGAJU |   |   |
->>>>>>> c4bbdab616bfe5f90b64894f423b05406f5e758a
