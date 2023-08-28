@@ -14,12 +14,12 @@ This solution will help this telecom company to better serve its customers by un
 The complete dataset  can be found and downloaded from Zindi: [Zindi Churn Challenge](https://zindi.africa/competitions/customer-churn-prediction-challenge-for-azubian)
 <br />
 
-**Train data :** Contains information about 1 million customers. There is a column called CHURN that indicates if a client churned or did not churn. This is the target variable. You must estimate the likelihood that these clients churned. You will use this file to train your model.
+**Train data :** Contains information about 1 million customers. There is a column called CHURN that indicates if a client churned or not. This is the target variable. You must estimate the likelihood that these clients churned. We will use this file to train our model.
 
-**Test data :** This similar to the train data, but without the Churn column. You will use this file to test your model.
+**Test data :** This is similar to the train data but without the Churn column. We will use this file to test our model.
 
-The dataset has 19 variables. The following are the definitions of variables found in the datasets:<br />
-`user_id` The unique identification number of a client<br />
+The dataset has 19 variables. Below are the definitions of variables found in the datasets:<br />
+`user_id` A  unique identification number of a client<br />
 `REGION` The location of each client<br />
 `TENURE` Duration of the network usage<br />
 `MONTANT` The top-up amount<br />
@@ -37,7 +37,7 @@ The dataset has 19 variables. The following are the definitions of variables fou
 `REGULARITY`The number of times the client is active for 90 days<br />
 `TOP_PACK`the most active packs<br />
 `FREQ_TOP_PACK`The number of times the client has activated the top pack packages<br />
-`CHURN` Whether a client still patronizes the network or not. This is the variable to predict - Target<br />
+`CHURN` Whether a client still patronizes the network or not. This is the variable to predict - (Target Variable)<br />
 
 
 
