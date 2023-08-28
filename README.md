@@ -1,7 +1,7 @@
 ## PROJECT DESCRIPTION
 This project is for an African telecommunications company that provides customers with airtime and mobile data bundles. The objective of this project is to develop a machine learning model to predict the likelihood of each customer “churning,” i.e. becoming inactive and not making any transactions for 90 days.
 
-This solution will help this telecom company to better serve their customers by understanding which customers are at risk of leaving
+This solution will help this telecom company to better serve its customers by understanding which customers are at risk of leaving
 
 ## SUMMARY
 | Code      | Name        | Published Article |  Deployed App |
@@ -14,7 +14,7 @@ This solution will help this telecom company to better serve their customers by 
 The complete dataset  can be found and downloaded from Zindi: [Zindi Churn Challenge](https://zindi.africa/competitions/customer-churn-prediction-challenge-for-azubian)
 <br />
 
-**Train data :** Contains information about 1 million customers. There is a column called CHURN that indicates if a client churned or did not churn. This is the target. You must estimate the likelihood that these clients churned. You will use this file to train your model.
+**Train data :** Contains information about 1 million customers. There is a column called CHURN that indicates if a client churned or did not churn. This is the target variable. You must estimate the likelihood that these clients churned. You will use this file to train your model.
 
 **Test data :** This similar to the train data, but without the Churn column. You will use this file to test your model.
 
@@ -135,7 +135,7 @@ Here are some ressources you would read to have a good understanding of FastAPI 
 |:------|:----------|:----------|
 |ELVIS DARKO|GHANA|elvis_darko@outlook.com|
 |FAITH BERIDA|NIGERIA|  |
-|RICHMOND E.Y. ABAKE|GHANA|  |
-|RICHMOND TETTEH| GHANA|    |
+|RICHMOND E.Y. ABAKE|GHANA| richie.abake@gmail.com |
+|RICHMOND TETTEH| GHANA|  |
 |JOSEPH GIKUBU| KENYA|gikubujoseph@outlook.com|
 |MARIE GRACE KAGAJU |   |   |
