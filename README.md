@@ -14,7 +14,7 @@ This solution will help this telecom company to better serve its customers by un
 The complete dataset  can be found and downloaded from Zindi: [Zindi Churn Challenge](https://zindi.africa/competitions/customer-churn-prediction-challenge-for-azubian)
 <br />
 
-**Train data :** Contains information about 1 million customers. There is a column called CHURN that indicates if a client churned or did not churn. This is the target. You must estimate the likelihood that these clients churned. You will use this file to train your model.
+**Train data :** Contains information about 1 million customers. There is a column called CHURN that indicates if a client churned or did not churn. This is the target variable. You must estimate the likelihood that these clients churned. You will use this file to train your model.
 
 **Test data :** This similar to the train data, but without the Churn column. You will use this file to test your model.
 
