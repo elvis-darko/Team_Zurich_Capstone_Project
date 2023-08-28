@@ -1,0 +1,1 @@
+The dataset used for this project is restricted by rules of the owner. However you can download the dataset from her [Zindi Churn Prediction Challenge](https://zindi.africa/competitions/customer-churn-prediction-challenge-for-azubian)
