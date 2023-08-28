@@ -134,7 +134,7 @@ Here are some ressources you would read to have a good understanding of FastAPI 
 | NAME  |   COUNTRY |   E-MAIL  |
 |:------|:----------|:----------|
 |ELVIS DARKO|GHANA|elvis_darko@outlook.com|
-|FAITH BERIDA|NIGERIA|  |
+|FAITH BERIDA|NIGERIA| princesstoy07@yahoo.com |
 |RICHMOND E.Y. ABAKE|GHANA|  |
 |RICHMOND TETTEH| GHANA|    |
 |JOSEPH GIKUBU|     | KENYA  |
