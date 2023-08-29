@@ -109,7 +109,7 @@ The evaluation metric for this challenge is Area Under the Curve (AUC).
 
 The values can be between 0 and 1, inclusive. Where 1 indicates the customer churned and 0 indicates the customer stayed with Expresso.
 
-Your submission should look like:
+Our final work would look like this:
 
             user_id                                      CHURN
             00001dbe00e56fc4b1c1b65dda63de2a5ece55f9      0.98
