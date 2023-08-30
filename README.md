@@ -1,7 +1,12 @@
 ## PROJECT DESCRIPTION
 This project is for an African telecommunications company that provides customers with airtime and mobile data bundles. The objective of this project is to develop a machine learning model to predict the likelihood of each customer “churning,” i.e. becoming inactive and not making any transactions for 90 days.
+<<<<<<< HEAD
 =======
 This solution will help this telecom company to better serve their customers by understanding which customers are at risk of leaving
+=======
+
+This solution will help this telecom company to better serve its customers by understanding which customers are at risk of leaving
+>>>>>>> bf0cf003ab12ddf9254e2e103af4faddfdeb6d03
 
 ## SUMMARY
 | Code      | Name        | Published Article |  Deployed App |
@@ -14,12 +19,12 @@ This solution will help this telecom company to better serve their customers by 
 The complete dataset  can be found and downloaded from Zindi: [Zindi Churn Challenge](https://zindi.africa/competitions/customer-churn-prediction-challenge-for-azubian)
 <br />
 
-**Train data :** Contains information about 1 million customers. There is a column called CHURN that indicates if a client churned or did not churn. This is the target. You must estimate the likelihood that these clients churned. You will use this file to train your model.
+**Train data :** Contains information about 1 million customers. There is a column called CHURN that indicates if a client churned or not. This is the target variable. You must estimate the likelihood that these clients churned. We will use this file to train our model.
 
-**Test data :** This similar to the train data, but without the Churn column. You will use this file to test your model.
+**Test data :** This is similar to the train data but without the Churn column. We will use this file to test our model.
 
-The dataset has 19 variables. The following are the definitions of variables found in the datasets:<br />
-`user_id` The unique identification number of a client<br />
+The dataset has 19 variables. Below are the definitions of variables found in the datasets:<br />
+`user_id` A  unique identification number of a client<br />
 `REGION` The location of each client<br />
 `TENURE` Duration of the network usage<br />
 `MONTANT` The top-up amount<br />
@@ -37,7 +42,7 @@ The dataset has 19 variables. The following are the definitions of variables fou
 `REGULARITY`The number of times the client is active for 90 days<br />
 `TOP_PACK`the most active packs<br />
 `FREQ_TOP_PACK`The number of times the client has activated the top pack packages<br />
-`CHURN` Whether a client still patronizes the network or not. This is the variable to predict - Target<br />
+`CHURN` Whether a client still patronizes the network or not. This is the variable to predict - (Target Variable)<br />
 
 
 
@@ -109,7 +114,7 @@ The evaluation metric for this challenge is Area Under the Curve (AUC).
 
 The values can be between 0 and 1, inclusive. Where 1 indicates the customer churned and 0 indicates the customer stayed with Expresso.
 
-Your submission should look like:
+Our final work would look like this:
 
             user_id                                      CHURN
             00001dbe00e56fc4b1c1b65dda63de2a5ece55f9      0.98
@@ -134,8 +139,15 @@ Here are some ressources you would read to have a good understanding of FastAPI 
 | NAME  |   COUNTRY |   E-MAIL  |
 |:------|:----------|:----------|
 |ELVIS DARKO|GHANA|elvis_darko@outlook.com|
+<<<<<<< HEAD
 |FAITH BERIDA|NIGERIA| princesstoy07@yahoo.com |
 |RICHMOND E.Y. ABAKE|GHANA|  |
 |RICHMOND TETTEH| GHANA|    |
 |JOSEPH GIKUBU|     | KENYA  |
+=======
+|FAITH BERIDA|NIGERIA|  |princesstoy07@yahoo.com
+|RICHMOND E.Y. ABAKE|GHANA| richie.abake@gmail.com |
+|RICHMOND TETTEH| GHANA|  |
+|JOSEPH GIKUBU| KENYA|gikubujoseph@outlook.com|
+>>>>>>> bf0cf003ab12ddf9254e2e103af4faddfdeb6d03
 |MARIE GRACE KAGAJU |   |   |
