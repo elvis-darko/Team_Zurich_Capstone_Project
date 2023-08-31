@@ -1,7 +1,12 @@
 ## PROJECT DESCRIPTION
 This project is for an African telecommunications company that provides customers with airtime and mobile data bundles. The objective of this project is to develop a machine learning model to predict the likelihood of each customer “churning,” i.e. becoming inactive and not making any transactions for 90 days.
+<<<<<<< HEAD
+=======
+This solution will help this telecom company to better serve their customers by understanding which customers are at risk of leaving
+=======
 
 This solution will help this telecom company to better serve its customers by understanding which customers are at risk of leaving
+>>>>>>> bf0cf003ab12ddf9254e2e103af4faddfdeb6d03
 
 ## SUMMARY
 | Code      | Name        | Published Article |  Deployed App |
@@ -134,8 +139,15 @@ Here are some ressources you would read to have a good understanding of FastAPI 
 | NAME  |   COUNTRY |   E-MAIL  |
 |:------|:----------|:----------|
 |ELVIS DARKO|GHANA|elvis_darko@outlook.com|
+<<<<<<< HEAD
+|FAITH BERIDA|NIGERIA| princesstoy07@yahoo.com |
+|RICHMOND E.Y. ABAKE|GHANA|  |
+|RICHMOND TETTEH| GHANA|    |
+|JOSEPH GIKUBU|     | KENYA  |
+=======
 |FAITH BERIDA|NIGERIA|  |princesstoy07@yahoo.com
 |RICHMOND E.Y. ABAKE|GHANA| richie.abake@gmail.com |
 |RICHMOND TETTEH| GHANA|  |
 |JOSEPH GIKUBU| KENYA|gikubujoseph@outlook.com|
+>>>>>>> bf0cf003ab12ddf9254e2e103af4faddfdeb6d03
 |MARIE GRACE KAGAJU |   |   |
