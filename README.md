@@ -50,7 +50,7 @@ The dataset has 19 variables. Below are the definitions of variables found in th
 ## SETUP
 It is recommended to have Virtual Studio Code or any other standard code editor on your local machine.<br />Install the required packages locally to your computer.
 
-It is recommended that you run a python version above 3.0. 
+It is recommended that you run a python version 3.0 and above. 
 You can download the required python version from [here](https://www.python.org/downloads/).
 
 Use these recommended steps to set up your local machine for this project:
