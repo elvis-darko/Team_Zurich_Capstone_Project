@@ -3,7 +3,7 @@ import joblib
 import numpy as np
 
 # Load the saved tuned Gradient Boosting model
-model_path = r'D:\Projects\Capstone Churn prediction\project Directory\tuned_gb_model.joblib'
+model_path = r'D:\Projects\Team_Zurich_Capstone_Project\Assets\src\tuned_gb_model.joblib'
 tuned_gb_model = joblib.load(model_path)
 
 # Create a function for the About page content
