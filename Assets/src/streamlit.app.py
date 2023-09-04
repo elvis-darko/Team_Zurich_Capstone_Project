@@ -7,12 +7,13 @@ import matplotlib.pyplot as plt
 model_path = r'D:\Projects\Team_Zurich_Capstone_Project\Assets\src\tuned_gb_model.joblib'
 tuned_gb_model = joblib.load(model_path)
 
+# Title of the app
+st.title('Team Zurich Churn Prediction App')
+
   # Add the image using st.image
 image_url = "https://i.ytimg.com/vi/ocMd2loRfWE/maxresdefault.jpg"
 st.image(image_url, caption='Team Zurich Churn Prediction App', use_column_width=True)
 
-# Title of the app
-st.title('Team Zurich Churn Prediction App')
 
 # HOW TO USE THE APP
 st.sidebar.title("How to Use the App")
@@ -62,7 +63,22 @@ if st.button('Predict'):
     else:
         st.write('Prediction: Churn')
         st.write(f'Churn Probability: {prediction_probability[0][1]:.2f}')
+        
+        # Create input data dictionary
+        input_data = {
+            "tenure": tenure,
+            "montant": montant,
+            # Add other input features here
+        }
 
+        # Send a POST request to FastAPI to get predictions
+        response = requests.post("http://localhost:8000/predict/", json=input_data)
+
+        if response.status_code == 200:
+            result = response.json()["result"]
+            st.write(result)
+        else:
+            st.error("Prediction error. Please try again.")
      # Feature Importance Plot
     if hasattr(tuned_gb_model, 'feature_importances_'):
         feature_importance = tuned_gb_model.feature_importances_
