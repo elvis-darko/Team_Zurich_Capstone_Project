@@ -1,6 +1,7 @@
 import streamlit as st
 import joblib
 import numpy as np
+import matplotlib.pyplot as plt
 
 # Load the saved tuned Gradient Boosting model
 model_path = r'D:\Projects\Team_Zurich_Capstone_Project\Assets\src\tuned_gb_model.joblib'
@@ -48,7 +49,29 @@ input_features = np.array([[tenure, montant, frequence_rech, revenue, arpu_segme
 # Make prediction
 if st.button('Predict'):
     prediction = tuned_gb_model.predict(input_features)
+    prediction_probability = tuned_gb_model.predict_proba(input_features)
     if prediction == 0:
+        st.image("https://toppng.com/uploads/preview/sad-face-transparent-png-crying-emoji-transparent-background-11562873850hiicomfwuq.png", use_column_width=True)
         st.write('Prediction: Not Churn')
+        
+        # Display recommendations for customers who did not churn
+        st.write("Recommendations for Customer Retention:")
+        st.write("1. Consider subscribing to our loyalty program for exclusive benefits.")
+        st.write("2. Explore our new product offerings for additional value.")
+        st.write("3. Contact our customer support for any assistance or questions.")
     else:
         st.write('Prediction: Churn')
+        st.write(f'Churn Probability: {prediction_probability[0][1]:.2f}')
+
+     # Feature Importance Plot
+    if hasattr(tuned_gb_model, 'feature_importances_'):
+        feature_importance = tuned_gb_model.feature_importances_
+        features = ['Tenure', 'Montant', 'Frequence Recharge', 'Revenue', 'ARPU Segment',
+                    'Frequency', 'Data Volume', 'On Net', 'Orange', 'Tigo', 'Zone1', 'Zone2',
+                    'Regularity', 'Frequency Top Pack', 'Total Recharge', 'Avg Revenue Montant',
+                    'Frequence Squared', 'On Net Reg Ratio']
+        plt.figure(figsize=(10, 6))
+        plt.barh(features, feature_importance)
+        plt.xlabel('Feature Importance')
+        plt.title('Feature Importance for Churn Prediction')
+        st.pyplot(plt)
