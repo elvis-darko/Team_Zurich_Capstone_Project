@@ -14,6 +14,10 @@ RUN pip install -r requirements.txt
 EXPOSE 8501
 EXPOSE 8000
 
-# Run FastAPI and Streamlit together using uvicorn
-CMD ["uvicorn", "fastapi_app:app", "--host", "0.0.0.0", "--port", "8000", "--workers", "4"]
-CMD ["streamlit", "run", "streamlit_app.py"]
+# Create a shell script to run both FastAPI and Streamlit
+RUN echo 'uvicorn fastapi_app:app --host 0.0.0.0 --port 8000 --workers 4 &' > start.sh
+RUN echo 'streamlit run streamlit.app.py' >> start.sh
+RUN chmod +x start.sh
+
+# Run the shell script as the CMD
+CMD ["./start.sh"]
