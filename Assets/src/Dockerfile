@@ -17,6 +17,7 @@ RUN pip install -r requirements.txt
 # Install streamlit
 RUN pip install streamlit
 
+
 # Make port 8501 (Streamlit) and 8000 (FastAPI) available to the world outside this container
 EXPOSE 8501
 EXPOSE 8000
