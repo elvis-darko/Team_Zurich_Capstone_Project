@@ -1,20 +1,16 @@
 import streamlit as st
 import joblib
-import numpy as np
-import matplotlib.pyplot as plt
-
 
 # Load the saved tuned Gradient Boosting model
-model_path = r'D:\Projects\Team_Zurich_Capstone_Project\Assets\src\tuned_gb_model.joblib'
+model_path = "https://github.com/Preencez/Team_Zurich_Capstone_Project/raw/main/Assets/src/tuned_gb_model.joblib"
 tuned_gb_model = joblib.load(model_path)
 
 # Title of the app
 st.title('Team Zurich Churn Prediction App')
 
-  # Add the image using st.image
+# Add the image using st.image
 image_url = "https://i.ytimg.com/vi/ocMd2loRfWE/maxresdefault.jpg"
 st.image(image_url, caption='Team Zurich Churn Prediction App', use_column_width=True)
-
 
 # HOW TO USE THE APP
 st.sidebar.title("How to Use the App")
