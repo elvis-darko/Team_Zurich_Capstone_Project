@@ -2,6 +2,26 @@ import streamlit as st
 import joblib
 import numpy as np
 import matplotlib.pyplot as plt
+# Debugging: Print the model_path to verify its value
+model_path = r'/path/to/your/model/tuned_gb_model.joblib'
+st.write(f"Model Path: {model_path}")
+
+# Attempt to load the model
+try:
+    tuned_gb_model = joblib.load(model_path)
+    st.write("Model loaded successfully.")
+except FileNotFoundError as e:
+    st.error(f"File not found: {model_path}")
+except Exception as e:
+    st.error(f"Error loading the model: {str(e)}")
+
+
+# Load the saved tuned Gradient Boosting model
+model_path = r'D:\Projects\Team_Zurich_Capstone_Project\Assets\src\tuned_gb_model.joblib'
+tuned_gb_model = joblib.load(model_path)
+
+# Title of the app
+st.title('Team Zurich Churn Prediction App')
 
 # Load the saved tuned Gradient Boosting model
 model_path = r'D:\Projects\Team_Zurich_Capstone_Project\Assets\src\tuned_gb_model.joblib'
