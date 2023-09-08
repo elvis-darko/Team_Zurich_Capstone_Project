@@ -2,18 +2,16 @@ import streamlit as st
 import joblib
 import numpy as np
 import matplotlib.pyplot as plt
-# Debugging: Print the model_path to verify its value
-model_path = r'/path/to/your/model/tuned_gb_model.joblib'
-st.write(f"Model Path: {model_path}")
-
-# Attempt to load the model
-try:
-    tuned_gb_model = joblib.load(model_path)
-    st.write("Model loaded successfully.")
-except FileNotFoundError as e:
-    st.error(f"File not found: {model_path}")
-except Exception as e:
-    st.error(f"Error loading the model: {str(e)}")
+# Raw GitHub URL of your model
+model_url = "https://github.com/Preencez/Team_Zurich_Capstone_Project/raw/main/Assets/src/tuned_gb_model.joblib"
+ Load the model from the raw GitHub URL
+response = requests.get(model_url)
+if response.status_code == 200:
+    with open("tuned_gb_model.joblib", "wb") as f:
+        f.write(response.content)
+    tuned_gb_model = joblib.load("tuned_gb_model.joblib")
+else:
+    st.error("Failed to load the model from GitHub.")
 
 
 # Load the saved tuned Gradient Boosting model
