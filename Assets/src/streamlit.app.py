@@ -2,8 +2,21 @@ import streamlit as st
 import joblib
 
 # Load the saved tuned Gradient Boosting model
+<<<<<<< HEAD
 model_path = "https://github.com/Preencez/Team_Zurich_Capstone_Project/raw/main/Assets/src/tuned_gb_model.joblib"
 tuned_gb_model = joblib.load(model_path)
+=======
+# Raw GitHub URL of your model
+model_url = "https://github.com/Preencez/Team_Zurich_Capstone_Project/raw/main/Assets/src/tuned_gb_model.joblib"
+#Load the model from the raw GitHub URL
+response = requests.get(model_url)
+if response.status_code == 200:
+    with open("tuned_gb_model.joblib", "wb") as f:
+        f.write(response.content)
+    tuned_gb_model = joblib.load("tuned_gb_model.joblib")
+else:
+    st.error("Failed to load the model from GitHub.")
+>>>>>>> d77d8c1c4eaed5e4f3884767fcc92d8864e595bd
 
 # Title of the app
 st.title('Team Zurich Churn Prediction App')
