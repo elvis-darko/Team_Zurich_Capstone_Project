@@ -7,7 +7,7 @@ import matplotlib.pyplot as plt
 # Load the saved tuned Gradient Boosting model
 # Raw GitHub URL of your model
 model_url = "https://github.com/Preencez/Team_Zurich_Capstone_Project/raw/main/Assets/src/tuned_gb_model.joblib"
- Load the model from the raw GitHub URL
+#Load the model from the raw GitHub URL
 response = requests.get(model_url)
 if response.status_code == 200:
     with open("tuned_gb_model.joblib", "wb") as f:
