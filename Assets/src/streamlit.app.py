@@ -5,29 +5,17 @@ import matplotlib.pyplot as plt
 import requests
 
 
-# Define the URL of your model on GitHub
+# Raw GitHub URL of your model
 model_url = "https://github.com/Preencez/Team_Zurich_Capstone_Project/raw/main/Assets/src/tuned_gb_model.joblib"
 
-# Load the model from the local file
-tuned_gb_model = joblib.load("D:/Projects/Team_Zurich_Capstone_Project/Assets/src/tuned_gb_model.joblib")
-
-
-# Send a GET request to download the model file
+# Download the model file from the URL and save it locally
 response = requests.get(model_url)
-
-# Check if the download was successful (status code 200)
 if response.status_code == 200:
-    # Save the model file locally
     with open("tuned_gb_model.joblib", "wb") as f:
         f.write(response.content)
-# Load the model from the local file
-tuned_gb_model = joblib.load("D:/Projects/Team_Zurich_Capstone_Project/Assets/src/tuned_gb_model.joblib")
-import numpy as np
-import matplotlib.pyplot as plt
-
-# Load the saved tuned Gradient Boosting model
-model_path = "https://github.com/Preencez/Team_Zurich_Capstone_Project/raw/main/Assets/src/tuned_gb_model.joblib"
-tuned_gb_model = joblib.load(model_path)
+    tuned_gb_model = joblib.load("tuned_gb_model.joblib")
+else:
+    st.error("Failed to load the model from GitHub.")
 
 # Title of the app
 st.title('Team Zurich Churn Prediction App')
