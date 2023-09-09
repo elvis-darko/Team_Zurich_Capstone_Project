@@ -6,7 +6,7 @@ import requests
 
 # Define functions to calculate values
 def calculate_total_recharge(montant, frequence_rech):
-    return montant + frequence_rech
+    return montant * frequence_rech
 
 def calculate_avg_revenue_montant(revenue, montant):
     return (revenue + montant) / 2
@@ -38,8 +38,12 @@ st.image(image_url, caption='Team Zurich Churn Prediction App', use_column_width
 
 # HOW TO USE THE APP
 st.sidebar.title("How to Use the App")
-st.sidebar.write("1. Provide the necessary input features.")
-st.sidebar.write("2. Click the 'Predict' button.")
+st.sidebar.write("1. Input Features: Adjust values for customer features.")
+st.sidebar.write("2. Click 'Predict': Get churn prediction.")
+st.sidebar.write("3. Result: See if it's 'Churn' or 'Not Churn.'")
+st.sidebar.write("4. Recommendations (Not Churn): Explore retention suggestions.")
+st.sidebar.write("5. Accuracy Score: Check prediction performance.")
+st.sidebar.write("6. Feedback (Churn): Provide input for improvements.")
 
 # Input form
 tenure = st.slider('Tenure: Duration in the network', 1, 12, 7)

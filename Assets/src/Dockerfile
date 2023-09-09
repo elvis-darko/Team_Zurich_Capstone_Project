@@ -14,13 +14,12 @@ RUN pip install -r requirements.txt
 RUN pip install streamlit
 
 # Expose the ports
+
 EXPOSE 8501
 EXPOSE 8000
 
 # Create an entry point script to run both FastAPI and Streamlit
-RUN echo '#!/bin/bash' > entrypoint.sh
-RUN echo 'uvicorn fastapi_app:app --host 0.0.0.0 --port 8000 --workers 4 &' >> entrypoint.sh
-RUN echo 'streamlit run streamlit.app.py' >> entrypoint.sh
+RUN echo 'uvicorn fastapi_app:app --host 0.0.0.0 --port 8000 --workers 4 & streamlit run streamlit.app.py' > entrypoint.sh
 RUN chmod +x entrypoint.sh
 
 # Use the entry point script to start the services
