@@ -92,7 +92,7 @@ if st.button('Predict'):
         st.write(f'Churn Probability Score: {round(prediction_probability[0] * 100, 2)}%')
         
         # Display accuracy score
-        accuracy = 0.85  # Replace with your actual accuracy score
+        accuracy = 0.80  # Replace with your actual accuracy score
         st.write(f'Accuracy Score: {accuracy:.2f}')
         
         # Display feature importance as a bar chart
