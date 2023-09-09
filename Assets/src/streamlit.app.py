@@ -8,6 +8,10 @@ import requests
 # Define the URL of your model on GitHub
 model_url = "https://github.com/Preencez/Team_Zurich_Capstone_Project/raw/main/Assets/src/tuned_gb_model.joblib"
 
+# Load the model from the local file
+tuned_gb_model = joblib.load("D:/Projects/Team_Zurich_Capstone_Project/Assets/src/tuned_gb_model.joblib")
+
+
 # Send a GET request to download the model file
 response = requests.get(model_url)
 
