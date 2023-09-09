@@ -45,7 +45,7 @@ st.sidebar.write("2. Click 'Predict': Get churn prediction.")
 st.sidebar.write("3. Result: See if it's 'Churn' or 'Not Churn.'")
 st.sidebar.write("4. Recommendations (Not Churn): Explore retention suggestions.")
 st.sidebar.write("5. Accuracy Score: Check prediction performance.")
-st.sidebar.write("6. Feedback (Churn): Provide input for improvements.")
+
 
 # Input form
 tenure = st.slider('Tenure: Duration in the network', 1, 12, 7)
