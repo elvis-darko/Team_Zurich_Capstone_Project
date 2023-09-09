@@ -55,7 +55,7 @@ frequence = st.number_input('Frequency: Number of times the customer refilled', 
 data_volume = st.number_input('Data Volume: Number of connections', value=0.0)
 on_net = st.number_input('On Net: Inter-expresso call', value=0.0)
 orange = st.number_input('Orange: Call to Orange', value=0.0)
-tigo = st.number_input('Tigo: Call to Tigo', value=0.0)
+tigo2 = st.number_input('Tigo: Call to Tigo', value=0.0)
 zone1 = st.number_input('Zone1: Call to Zone1', value=0.0)
 zone2 = st.number_input('Zone2: Call to Zone2', value=0.0)
 regularity = st.slider('Regularity: Number of times the client is active for 90 days', 1, 61, 30)
