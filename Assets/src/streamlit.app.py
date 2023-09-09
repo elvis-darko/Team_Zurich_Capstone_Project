@@ -17,7 +17,6 @@ def calculate_frequence_squared(frequence):
 def calculate_on_net_reg_ratio(on_net, regularity):
     return on_net / regularity
 
-
 # Raw GitHub URL of your model
 model_url = "https://github.com/Preencez/Team_Zurich_Capstone_Project/raw/main/Assets/src/tuned_gb_model.joblib"
 
@@ -34,20 +33,20 @@ else:
 st.title('Team Zurich Churn Prediction App')
 
 # Add the image using st.image
-image_url = "https://i.ytimg.com/vi/ocMd2loRfWE/maxresdefault.jpg"
+image_url = "https://th.bing.com/th/id/OIP.Skl99UBPCZac2x6e6rZivwHaDz?pid=ImgDet&rs=1"
 st.image(image_url, caption='Team Zurich Churn Prediction App', use_column_width=True)
 
 # HOW TO USE THE APP
 st.sidebar.title("How to Use the App")
 st.sidebar.write("1. Provide the necessary input features.")
-st.sidebar.write("2. Click the 'Predict")
+st.sidebar.write("2. Click the 'Predict' button.")
 
 # Input form
 tenure = st.slider('Tenure: Duration in the network', 1, 12, 7)
 montant = st.number_input('Montant: Top-up amount', value=0.0)
 frequence_rech = st.number_input('Frequence Recharge: Number of times the customer refilled', value=0.0)
 revenue = st.number_input('Revenue: Monthly income of each client', value=0.0)
-arpu_segment = st.number_input('ARPU Segment:  Income over 90 days / 3', value=0.0)
+arpu_segment = st.number_input('ARPU Segment: Income over 90 days / 3', value=0.0)
 frequence = st.number_input('Frequency: Number of times the customer refilled', value=0.0)
 data_volume = st.number_input('Data Volume: Number of connections', value=0.0)
 on_net = st.number_input('On Net: Inter-expresso call', value=0.0)
@@ -79,46 +78,51 @@ if st.button('Predict'):
                                 frequence_squared, on_net_reg_ratio]])
     
     prediction = tuned_gb_model.predict(input_features)
-    prediction_probability = tuned_gb_model.predict_proba(input_features)
-    
-    if prediction == 0:
-        st.image("https://toppng.com/uploads/preview/sad-face-transparent-png-crying-emoji-transparent-background-11562873850hiicomfwuq.png", use_column_width=True)
+    prediction_probability = tuned_gb_model.predict_proba(input_features)[:, 1]  # Probability of churn
+
+    if prediction[0] == 0:
+        st.image("https://creazilla-store.fra1.digitaloceanspaces.com/cliparts/65532/happy-emoji-clipart-md.png", use_column_width=True)
         st.write('Prediction: Not Churn')
+        
+        # Display churn probability score
+        st.write(f'Churn Probability Score: {round(prediction_probability[0] * 100, 2)}%')
+        
+        # Display accuracy score
+        accuracy = 0.85  # Replace with your actual accuracy score
+        st.write(f'Accuracy Score: {accuracy:.2f}')
+        
+        # Display feature importance as a bar chart
+        feature_importance = tuned_gb_model.feature_importances_
+        feature_names = ["tenure", "montant", "frequence_rech", "revenue", "arpu_segment",
+                         "frequence", "data_volume", "on_net", "orange", "tigo",
+                         "zone1", "zone2", "regularity", "freq_top_pack", "total_recharge",
+                         "avg_revenue_montant", "frequence_squared", "on_net_reg_ratio"]
+        
+        # Create a bar chart
+        plt.barh(feature_names, feature_importance)
+        plt.xlabel('Feature Importance')
+        plt.ylabel('Features')
+        plt.title('Feature Importance Scores')
+        
+        # Display the chart using Streamlit
+        st.pyplot(plt)
         
         # Display recommendations for customers who did not churn
         st.write("Recommendations for Customer Retention:")
-        st.write("1. Consider subscribing to our loyalty program for exclusive benefits.")
-        st.write("2. Explore our new product offerings for additional value.")
-        st.write("3. Contact our customer support for any assistance or questions.")
-    else:
-        st.write('Prediction: Churn')
-        st.write(f'Churn Probability: {prediction_probability[0][1]:.2f}')
+        st.write("Thank you for choosing to stay with us. We truly value your business, Your loyalty means a lot to us, and we're here to serve you")
+        st.write("1. Kindly consider subscribing to our loyalty program for exclusive benefits.")
+        st.write("2. Explore our new product offerings for additional benefits")
+        st.write("3. Unlock personalized recommendations and tailored experiences as a loyalty program member. We'll cater to your preferences and needs like never before.")
+        st.write("4. Get an exclusive sneak peek at upcoming features or products. You can even participate in beta testing and help shape our future offerings.")
+        st.write("5. Accumulate rewards points with every purchase, which you can redeem for exciting prizes, discounts, or even free products.")
         
-        # Create input data dictionary
-        input_data = {
-            "tenure": tenure,
-            "montant": montant,
-            # Add other input features here
-        }
-
-        # Send a POST request to FastAPI to get predictions
-        response = requests.post("http://localhost:8000/predict/", json=input_data)
-
-        if response.status_code == 200:
-            result = response.json()["result"]
-            st.write(result)
-        else:
-            st.error("Prediction error. Please try again.")
-    
-# Feature Importance Plot
-if hasattr(tuned_gb_model, 'feature_importances_'):
-    feature_importance = tuned_gb_model.feature_importances_
-    features = ['Tenure', 'Montant', 'Frequence Recharge', 'Revenue', 'ARPU Segment',
-                'Frequency', 'Data Volume', 'On Net', 'Orange', 'Tigo', 'Zone1', 'Zone2',
-                'Regularity', 'Frequency Top Pack', 'Total Recharge', 'Avg Revenue Montant',
-                'Frequence Squared', 'On Net Reg Ratio']
-    plt.figure(figsize=(10, 6))
-    plt.barh(features, feature_importance)
-    plt.xlabel('Feature Importance')
-    plt.title('Feature Importance for Churn Prediction')
-    st.pyplot(plt)
+    else:
+        # Handle the case where the prediction is churn
+        st.image("https://www.bing.com/images/search?view=detailV2&ccid=NomGYb2F&id=CFAB1B8951296B62ED3B4EDC7875A6AC9A9C2102&thid=OIP.NomGYb2FFUxlWnpSHC6Y4gHaHa&mediaurl=https%3a%2f%2ffiles.123freevectors.com%2fwp-content%2foriginal%2f33898-sad-face-emoji-vector.jpg&cdnurl=https%3a%2f%2fth.bing.com%2fth%2fid%2fR.36898661bd85154c655a7a521c2e98e2%3frik%3dAiGcmqymdXjcTg%26pid%3dImgRaw%26r%3d0&exph=3333&expw=3333&q=sad+emoji&simid=608004405752765317&FORM=IRPRST&ck=9B0C4D788378CB0CB7A59FBF9C10D4EB&selectedIndex=7", use_column_width=True)  # Replace with an appropriate churn image
+        st.write('Prediction: Churn')
+        
+        # Display churn probability score
+        st.write(f'Churn Probability Score: {round(prediction_probability[0] * 100, 2)}%')
+        
+        # Add a message to clients who churn
+        st.write("We're sorry to see you go. If you have any feedback or concerns, please don't hesitate to reach out to us. We value your input and are always looking to improve our services.")
