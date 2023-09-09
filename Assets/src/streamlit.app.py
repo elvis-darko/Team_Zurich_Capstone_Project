@@ -18,6 +18,12 @@ if response.status_code == 200:
         f.write(response.content)
 # Load the model from the local file
 tuned_gb_model = joblib.load("D:/Projects/Team_Zurich_Capstone_Project/Assets/src/tuned_gb_model.joblib")
+import numpy as np
+import matplotlib.pyplot as plt
+
+# Load the saved tuned Gradient Boosting model
+model_path = "https://github.com/Preencez/Team_Zurich_Capstone_Project/raw/main/Assets/src/tuned_gb_model.joblib"
+tuned_gb_model = joblib.load(model_path)
 
 # Title of the app
 st.title('Team Zurich Churn Prediction App')
@@ -25,7 +31,6 @@ st.title('Team Zurich Churn Prediction App')
 # Add the image using st.image
 image_url = "https://i.ytimg.com/vi/ocMd2loRfWE/maxresdefault.jpg"
 st.image(image_url, caption='Team Zurich Churn Prediction App', use_column_width=True)
-
 # HOW TO USE THE APP
 st.sidebar.title("How to Use the App")
 st.sidebar.write("1. Provide the necessary input features.")
