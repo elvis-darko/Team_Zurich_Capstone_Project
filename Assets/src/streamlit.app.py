@@ -16,6 +16,7 @@ def calculate_frequence_squared(frequence):
 
 def calculate_on_net_reg_ratio(on_net, regularity):
     return on_net / regularity
+
 def calculate_arpu_segment(revenue):
     return revenue / (90 * 3)
 
@@ -78,7 +79,7 @@ st.text_input("On Net Reg Ratio", on_net_reg_ratio)
 # Make prediction
 if st.button('Predict'):
     input_features = np.array([[tenure, montant, frequence_rech, revenue, arpu_segment, 
-                                frequence, data_volume, on_net, orange, tigo, 
+                                frequence, data_volume, on_net, orange,tigo2, 
                                 zone1, zone2, regularity, freq_top_pack, 
                                 total_recharge, avg_revenue_montant, 
                                 frequence_squared, on_net_reg_ratio]])
