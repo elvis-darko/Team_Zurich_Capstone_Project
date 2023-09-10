@@ -1,4 +1,5 @@
 import streamlit as st
+from streamlit_option_menu import option_menu
 import joblib
 import numpy as np
 import matplotlib.pyplot as plt
