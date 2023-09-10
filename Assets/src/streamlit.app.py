@@ -58,7 +58,7 @@ def prediction_page():
     #st.title('Team Zurich Churn Prediction App')
 
     # Add the image using st.image
-    image_url = "https://github.com/elvis-darko/Team_Zurich_Capstone_Project/raw/main/Assets/images/customer-attrition.jpg"
+    image_url = "https://github.com/elvis-darko/Team_Zurich_Capstone_Project/raw/main/Assets/images/cust_churn.jpg"
     st.image(image_url, caption='Team Zurich Churn Prediction App', use_column_width=True)
 
 
