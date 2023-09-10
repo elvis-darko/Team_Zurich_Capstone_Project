@@ -7,6 +7,8 @@ import requests
 from PIL import Image
 
 # Set style of page
+st.set_page_config(page_title="EXPRESSO CUSTOMER CHURN PREDICTION APP", page_icon="GH", initial_sidebar_state="expanded")
+
 hide_streamlit_style = """
             <style>
             #MainMenu {visibility: hidden;}
@@ -21,6 +23,7 @@ css_style = {
     "nav-link-selected": {"background-color": "#FF4C1B"},
 }
 
+
 # Define functions to calculate values
 def calculate_total_recharge(montant, frequence_rech):
     return montant * frequence_rech
@@ -34,12 +37,27 @@ def calculate_frequence_squared(frequence):
 def calculate_on_net_reg_ratio(on_net, regularity):
     return on_net / regularity
 
-st.set_page_config(page_title="EXPRESSO CUSTOMER CHURN PREDICTION APP", page_icon="GH", initial_sidebar_state="expanded")
-
-
+# Set up home page
 def home_page():
-    
+    exp_url = "https://github.com/elvis-darko/Team_Zurich_Capstone_Project/raw/main/Assets/images/expresso.png"
+    st.image(exp_url, caption='Team Zurich Churn Prediction App', use_column_width=True)
+    st.write("Welcome to Expresso Churn Prediction App developed by Team Zurich")
+    st.write("This App is for an African telecommunications company, Expresso. The company provides customers with airtime and mobile data bundles")
+    st.write("The objective of this project is to develop a machine learning model to predict the likelihood of each customer “churning,” i.e. becoming inactive and not making any transactions for 90 days")
+    st.write("This solution will help Expresso to better serve their customers by understanding which customers are at risk of leaving.")
+    st.write(f"""
+    <p>The following method will help you to use the app:</p>
+    <ul>
+        <li>Input Features: Adjust values for customer features.</li>
+        <li>Click 'Predict': Get churn prediction."</li>
+        <li>Result: See if it's 'Churn' or 'Not Churn.</li>
+        <li>Recommendations (Not Churn): Explore retention suggestions.</li>
+        <li>Accuracy Score: Check prediction performance."</li>
+        <li>Feedback (Churn): Provide input for improvements.</li>
+    </ul>
+    """, unsafe_allow_html=True)
 
+# Set up prediction page
 def prediction_page():
 
     # Raw GitHub URL of your model
@@ -55,7 +73,7 @@ def prediction_page():
         st.error("Failed to load the model from GitHub.")
 
     # Title of the app
-    #st.title('Team Zurich Churn Prediction App')
+    st.title('Expresso Churn Prediction App by Team Zurich')
 
     # Add the image using st.image
     image_url = "https://github.com/elvis-darko/Team_Zurich_Capstone_Project/raw/main/Assets/images/cust_churn.jpg"
@@ -148,19 +166,10 @@ def prediction_page():
             # Add a message to clients who churn
             st.write("We're sorry to see you go. If you have any feedback or concerns, please don't hesitate to reach out to us. We value your input and are always looking to improve our services.")
 
-with st.sidebar:
-    cust_url = "https://github.com/elvis-darko/Team_Zurich_Capstone_Project/raw/main/Assets/images/expresso.jpg"
-    st.image(cust_url, use_column_width=True)
-    selected = option_menu(
-        menu_title=None,
-        options=["Home", "Prediction", "Developers"],
-        icons=["house", "droplet", "people"],
-        styles=css_style
-    )
 
 def developers_page():
      dev_url = "https://github.com/elvis-darko/Team_Zurich_Capstone_Project/raw/main/Assets/images/developer.png"
-     st.image(dev_url, use_column_width=True)
+     st.image(dev_url, caption='Team Zurich Churn Prediction App', use_column_width=True)
      st.write(f"""<h2>THE APP DEVELOPERS</h2>
     <p>The following individuals contributed to the development of this streamlit churn app:</p>
     <ul>
@@ -173,7 +182,18 @@ def developers_page():
     </ul>
     """, unsafe_allow_html=True)
 
+# Set up option menu (side bar)
+with st.sidebar:
+    cust_url = "https://github.com/elvis-darko/Team_Zurich_Capstone_Project/raw/main/Assets/images/expresso.jpg"
+    st.image(cust_url, use_column_width=True)
+    selected = option_menu(
+        menu_title=None,
+        options=["Home", "Prediction", "Developers"],
+        icons=["house", "droplet", "people"],
+        styles=css_style
+    )
 
+# Configure page settings
 if selected == "Home":
     home_page()
 
