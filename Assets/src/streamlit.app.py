@@ -149,19 +149,20 @@ def prediction_page():
             st.write("We're sorry to see you go. If you have any feedback or concerns, please don't hesitate to reach out to us. We value your input and are always looking to improve our services.")
 
 with st.sidebar:
-    image_url = "https://github.com/elvis-darko/Team_Zurich_Capstone_Project/raw/main/Assets/images/cust_churn.jpg"
-    st.image(image_url, use_column_width=True)
+    cust_url = "https://github.com/elvis-darko/Team_Zurich_Capstone_Project/raw/main/Assets/images/cust_churn.jpg"
+    st.image(cust_url, use_column_width=True)
     selected = option_menu(
         menu_title=None,
         options=["Home", "Prediction", "Developers"],
         icons=["house", "droplet", "people"],
         styles=css_style
     )
+
 def developers_page():
-     image_url = "https://github.com/elvis-darko/Team_Zurich_Capstone_Project/raw/main/Assets/images/developer."
-     st.image(image_url, use_column_width=True)
-     st.write(f"""<h2>The APP DEVELOPERS</h2>
-    <p>The following individuals contributed to the development of this churn app:</p>
+     dev_url = "https://github.com/elvis-darko/Team_Zurich_Capstone_Project/raw/main/Assets/images/developer.png"
+     st.image(dev_url, use_column_width=True)
+     st.write(f"""<h2>THE APP DEVELOPERS</h2>
+    <p>The following individuals contributed to the development of this streamlit churn app:</p>
     <ul>
         <li>[Elvis Darko](https://github.com/elvis-darko)</li>
         <li>[Faith Berida](https://github.com/Preencez)</li>
