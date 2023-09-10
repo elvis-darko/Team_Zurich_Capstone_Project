@@ -201,7 +201,7 @@ with st.sidebar:
 # App entry point
 def main():
     # Render the welcome page by default
-    page = st.sidebar.radio("Navigation", ("Home", "Prediction", "Developers"))
+    page = st.sidebar.radio("Main Menu", ("Home", "Prediction", "Developers"))
 
     # Configure page settings
     if page == "Home":
