@@ -7,9 +7,6 @@ import requests
 from PIL import Image
 
 
-# Set style of page
-st.set_page_config(page_title="EXPRESSO CUSTOMER CHURN PREDICTION APP", page_icon="GH", initial_sidebar_state="expanded")
-
 hide_streamlit_style = """
             <style>
             #MainMenu {visibility: hidden;}
@@ -197,6 +194,9 @@ def developers_page():
 with st.sidebar:
      cust_url = "https://github.com/elvis-darko/Team_Zurich_Capstone_Project/raw/main/Assets/images/expresso.jpg"
      st.image(cust_url, use_column_width=True)
+
+# Set style of page
+st.set_page_config(page_title="EXPRESSO CUSTOMER CHURN PREDICTION APP", page_icon="GH", initial_sidebar_state="expanded")
 
 # App entry point
 def main():
