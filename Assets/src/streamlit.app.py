@@ -6,6 +6,21 @@ import matplotlib.pyplot as plt
 import requests
 from PIL import Image
 
+# Set style of page
+hide_streamlit_style = """
+            <style>
+            #MainMenu {visibility: hidden;}
+            footer {visibility: hidden;}
+            </style>
+            """
+st.markdown(hide_streamlit_style, unsafe_allow_html=True)
+
+css_style = {
+    "icon": {"color": "white"},
+    "nav-link": {"--hover-color": "grey"},
+    "nav-link-selected": {"background-color": "#FF4C1B"},
+}
+
 # Define functions to calculate values
 def calculate_total_recharge(montant, frequence_rech):
     return montant * frequence_rech
@@ -143,6 +158,19 @@ with st.sidebar:
         styles=css_style
     )
 def developers_page():
+     image_url = "https://github.com/elvis-darko/Team_Zurich_Capstone_Project/raw/main/Assets/images/developer."
+     st.image(image_url, use_column_width=True)
+     st.write(f"""<h2>The APP DEVELOPERS</h2>
+    <p>The following individuals contributed to the development of this churn app:</p>
+    <ul>
+        <li>[Elvis Darko](https://github.com/elvis-darko)</li>
+        <li>[Faith Berida](https://github.com/Preencez)</li>
+        <li>[Richmond E.Y. Abake](https://github.com/AlphaLock)</li>
+        <li>[Joseph Gikubu](https://github.com/Gikubu)</li>
+        <li>Richmond Tetteh</li>
+        <li>Marie Grace Kagaju</li>
+    </ul>
+    """, unsafe_allow_html=True)
 
 
 if selected == "Home":
