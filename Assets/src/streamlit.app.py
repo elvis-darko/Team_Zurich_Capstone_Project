@@ -1,5 +1,5 @@
 import streamlit as st
-#from streamlit_option_menu import option_menu
+from streamlit_option_menu import option_menu
 import joblib
 import numpy as np
 import matplotlib.pyplot as plt
@@ -183,36 +183,46 @@ def developers_page():
     """, unsafe_allow_html=True)
 
 # # Set up option menu (side bar)
-# with st.sidebar:
-#     cust_url = "https://github.com/elvis-darko/Team_Zurich_Capstone_Project/raw/main/Assets/images/expresso.jpg"
-#     st.image(cust_url, use_column_width=True)
-#     selected = option_menu(
-#         menu_title=None,
-#         options=["Home", "Prediction", "Developers"],
-#         icons=["house", "droplet", "people"],
-#         styles=css_style
-#    )
-
 with st.sidebar:
-     cust_url = "https://github.com/elvis-darko/Team_Zurich_Capstone_Project/raw/main/Assets/images/expresso.jpg"
-     st.image(cust_url, use_column_width=True)
+    cust_url = "https://github.com/elvis-darko/Team_Zurich_Capstone_Project/raw/main/Assets/images/expresso.jpg"
+    st.image(cust_url, use_column_width=True)
+    selected = option_menu(
+        menu_title=None,
+        options=["Home", "Prediction", "Developers"],
+        icons=["house", "droplet", "people"],
+        styles=css_style
+   )
+    
+
+if selected == "Home":
+    home_page()
+
+elif selected == "Prediction":
+    prediction_page()
+
+elif selected == "Developers":
+    developers_page()
+
+# with st.sidebar:
+#      cust_url = "https://github.com/elvis-darko/Team_Zurich_Capstone_Project/raw/main/Assets/images/expresso.jpg"
+#      st.image(cust_url, use_column_width=True)
 
 
-# App entry point
-def main():
-    # Render the welcome page by default
-    page = st.sidebar.radio("Main Menu", ("Home", "Prediction", "Developers"))
+# # App entry point
+# def main():
+#     # Render the welcome page by default
+#     page = st.sidebar.radio("Main Menu", ("Home", "Prediction", "Developers"))
 
-    # Configure page settings
-    if page == "Home":
-        home_page()
+#     # Configure page settings
+#     if page == "Home":
+#         home_page()
 
-    elif page == "Prediction":
-        prediction_page()
+#     elif page == "Prediction":
+#         prediction_page()
 
-    elif page== "Developers":
-        developers_page()
+#     elif page== "Developers":
+#         developers_page()
 
-# Run the app
-if __name__ == "__main__":
-    main()
+# # Run the app
+# if __name__ == "__main__":
+#     main()
