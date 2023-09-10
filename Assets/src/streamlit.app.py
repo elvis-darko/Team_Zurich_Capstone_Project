@@ -36,7 +36,7 @@ else:
 st.title('Team Zurich Churn Prediction App')
 
 # Add the image using st.image
-image_url = "https://th.bing.com/th/id/OIP.Skl99UBPCZac2x6e6rZivwHaDz?pid=ImgDet&rs=1"
+image_url = "https://github.com/elvis-darko/Team_Zurich_Capstone_Project/raw/main/Assets/src/customer-attrition.jpg"
 st.image(image_url, caption='Team Zurich Churn Prediction App', use_column_width=True)
 
 # HOW TO USE THE APP
