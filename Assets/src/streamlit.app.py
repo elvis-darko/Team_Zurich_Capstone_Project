@@ -4,8 +4,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 import requests
 from PIL import Image
-import stqdm
-from stqdm import stqdm
+
 
 # Set style of page
 st.set_page_config(page_title="EXPRESSO CUSTOMER CHURN PREDICTION APP", page_icon="GH", initial_sidebar_state="expanded")
