@@ -1,22 +1,17 @@
-# Use an official Python 3.9 image as the base image
-FROM python:3.9
+# Use an official Python runtime as a parent image
+FROM python:3.9-slim
 
-# Set the working directory inside the container
+# Set the working directory to /app
 WORKDIR /app
 
-# Copy your Streamlit app code and model file into the container
-COPY streamlit.app.py /app/
-COPY tuned_gb_model.joblib /app/
+# Copy the current directory contents into the container at /app
+COPY . /app
 
-# Install required Python packages for Streamlit
-RUN pip install streamlit joblib scikit-learn matplotlib numpy requests
+# Install any needed packages specified in requirements.txt
+RUN pip install -r requirements.txt
 
-# Install required Python packages for FastAPI
-RUN pip install fastapi uvicorn pydantic
-
-# Expose ports for Streamlit and FastAPI
+# Make port 8501 available to the world outside this container
 EXPOSE 8501
-EXPOSE 8000
 
-# Define the command to run the Streamlit app
-CMD ["streamlit", "run", "streamlit.app.py"]
+# Define the command to run your Streamlit app
+CMD ["streamlit", "run", "app.py"]
