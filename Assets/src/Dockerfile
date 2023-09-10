@@ -8,11 +8,15 @@ WORKDIR /app
 COPY streamlit.app.py /app/
 COPY tuned_gb_model.joblib /app/
 
-# Install required Python packages
+# Install required Python packages for Streamlit
 RUN pip install streamlit joblib scikit-learn matplotlib numpy requests
 
-# Expose the port for Streamlit
+# Install required Python packages for FastAPI
+RUN pip install fastapi uvicorn pydantic
+
+# Expose ports for Streamlit and FastAPI
 EXPOSE 8501
+EXPOSE 8000
 
 # Define the command to run the Streamlit app
 CMD ["streamlit", "run", "streamlit.app.py"]
