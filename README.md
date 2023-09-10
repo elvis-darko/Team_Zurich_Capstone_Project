@@ -118,7 +118,7 @@ Our final work would look like this:
 
 
 ## Resources
-Here are some ressources you would read to have a good understanding of FastAPI :
+Here are some ressources you would read to have a good understanding of tools, packages and concepts used in the project:
 - [Tutorial - User Guide](https://fastapi.tiangolo.com/tutorial/)
 - [Video - Building a Machine Learning API in 15 Minutes ](https://youtu.be/C82lT9cWQiA)
 - [FastAPI for Machine Learning: Live coding an ML web application](https://www.youtube.com/watch?v=_BZGtifh_gw)
@@ -138,4 +138,4 @@ Here are some ressources you would read to have a good understanding of FastAPI 
 |RICHMOND E.Y. ABAKE|GHANA| richie.abake@gmail.com |
 |RICHMOND TETTEH| GHANA|  |
 |JOSEPH GIKUBU| KENYA|gikubujoseph@outlook.com|
-|MARIE GRACE KAGAJU |   |   |
+|MARIE GRACE KAGAJU |  RWANDA |   |
