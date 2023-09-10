@@ -199,7 +199,6 @@ def main():
     # Render the welcome page by default
     page = st.sidebar.radio("Navigation", ("Home", "Prediction", "Developers"))
 
-
     # Configure page settings
     if page == "Home":
         home_page()
@@ -209,3 +208,7 @@ def main():
 
     elif page== "Developers":
         developers_page()
+
+# Run the app
+if __name__ == "__main__":
+    main()
