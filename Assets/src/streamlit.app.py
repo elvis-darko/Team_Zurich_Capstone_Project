@@ -194,6 +194,10 @@ def developers_page():
 #         styles=css_style
 #    )
 
+with st.sidebar:
+     cust_url = "https://github.com/elvis-darko/Team_Zurich_Capstone_Project/raw/main/Assets/images/expresso.jpg"
+     st.image(cust_url, use_column_width=True)
+
 # App entry point
 def main():
     # Render the welcome page by default
