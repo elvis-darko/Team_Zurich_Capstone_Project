@@ -55,7 +55,7 @@ def prediction_page():
         st.error("Failed to load the model from GitHub.")
 
     # Title of the app
-    st.title('Team Zurich Churn Prediction App')
+    #st.title('Team Zurich Churn Prediction App')
 
     # Add the image using st.image
     image_url = "https://github.com/elvis-darko/Team_Zurich_Capstone_Project/raw/main/Assets/images/customer-attrition.jpg"
@@ -149,7 +149,7 @@ def prediction_page():
             st.write("We're sorry to see you go. If you have any feedback or concerns, please don't hesitate to reach out to us. We value your input and are always looking to improve our services.")
 
 with st.sidebar:
-    cust_url = "https://github.com/elvis-darko/Team_Zurich_Capstone_Project/raw/main/Assets/images/cust_churn.jpg"
+    cust_url = "https://github.com/elvis-darko/Team_Zurich_Capstone_Project/raw/main/Assets/images/expresso.jpg"
     st.image(cust_url, use_column_width=True)
     selected = option_menu(
         menu_title=None,
