@@ -174,10 +174,10 @@ def developers_page():
      st.write(f"""<h2>THE APP DEVELOPERS</h2>
     <p>The following individuals contributed to the development of this streamlit churn app:</p>
     <ul>
-        <li>[Elvis Darko](https://github.com/elvis-darko)</li>
-        <li>[Faith Berida](https://github.com/Preencez)</li>
-        <li>[Richmond E.Y. Abake](https://github.com/AlphaLock)</li>
-        <li>[Joseph Gikubu](https://github.com/Gikubu)</li>
+        <li>Elvis Darko</li>
+        <li>Faith Berida</li>
+        <li>Richmond E.Y. Abake</li>
+        <li>Joseph Gikubu</li>
         <li>Richmond Tetteh</li>
         <li>Marie Grace Kagaju</li>
     </ul>
