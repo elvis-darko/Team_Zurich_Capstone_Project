@@ -42,9 +42,9 @@ def home_page():
     st.title('EXPRESSO CHURN PREDICTION APP BY TEAM ZURICH')
     exp_url = "https://github.com/elvis-darko/Team_Zurich_Capstone_Project/raw/main/Assets/images/expresso.png"
     st.image(exp_url, caption='Team Zurich Churn Prediction App', use_column_width=True)
-    st.write("Welcome to Expresso Churn Prediction App developed by Team Zurich")
-    st.write("This App is for an African telecommunications company, Expresso. The company provides customers with airtime and mobile data bundles")
-    st.write("The objective of this project is to develop a machine learning model to predict the likelihood of each customer “churning,” i.e. becoming inactive and not making any transactions for 90 days")
+    st.write("<h2>Welcome to Expresso Churn Prediction App developed by Team Zurich!<h2>")
+    st.write("This App is for an African telecommunications company, Expresso. The company provides customers with airtime and mobile data bundles.")
+    st.write("The objective of this project is to develop a machine learning model to predict the likelihood of each customer “churning,” i.e. becoming inactive and not making any transactions for 90 days.")
     st.write("This solution will help Expresso to better serve their customers by understanding which customers are at risk of leaving.")
     st.write(f"""
     <p>The following method will help you to use the app:</p>
