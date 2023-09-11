@@ -125,7 +125,7 @@ def prediction_page():
             st.write('Prediction: Not Churn')
             
             # Display churn probability score
-            st.write(f'Churn Probability Score: {round(prediction_probability[0] * 100, 2)}%')
+            st.write(f'Churn Probability Score: {round(prediction_probability[0] * 100)}%')
             
             # Display accuracy score
             accuracy = 0.80  # Replace with your actual accuracy score
