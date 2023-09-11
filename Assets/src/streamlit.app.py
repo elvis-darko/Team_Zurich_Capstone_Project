@@ -6,22 +6,22 @@ import matplotlib.pyplot as plt
 import requests
 from PIL import Image
 
-# Set style of page
-st.set_page_config(page_title="EXPRESSO CUSTOMER CHURN PREDICTION APP", page_icon="GH", initial_sidebar_state="expanded")
+# # Set style of page
+# st.set_page_config(page_title="EXPRESSO CUSTOMER CHURN PREDICTION APP", page_icon="GH", initial_sidebar_state="expanded")
 
-hide_streamlit_style = """
-            <style>
-            #MainMenu {visibility: hidden;}
-            footer {visibility: hidden;}
-            </style>
-            """
-st.markdown(hide_streamlit_style, unsafe_allow_html=True)
+# hide_streamlit_style = """
+#             <style>
+#             #MainMenu {visibility: hidden;}
+#             footer {visibility: hidden;}
+#             </style>
+#             """
+# st.markdown(hide_streamlit_style, unsafe_allow_html=True)
 
-css_style = {
-    "icon": {"color": "white"},
-    "nav-link": {"--hover-color": "grey"},
-    "nav-link-selected": {"background-color": "#FF4C1B"},
-}
+# css_style = {
+#     "icon": {"color": "white"},
+#     "nav-link": {"--hover-color": "grey"},
+#     "nav-link-selected": {"background-color": "#FF4C1B"},
+# }
 
 
 # Define functions to calculate values
@@ -39,6 +39,7 @@ def calculate_on_net_reg_ratio(on_net, regularity):
 
 # Set up home page
 def home_page():
+    st.title('EXPRESSO CHURN PREDICTION APP BY TEAM ZURICH')
     exp_url = "https://github.com/elvis-darko/Team_Zurich_Capstone_Project/raw/main/Assets/images/expresso.png"
     st.image(exp_url, caption='Team Zurich Churn Prediction App', use_column_width=True)
     st.write("Welcome to Expresso Churn Prediction App developed by Team Zurich")
