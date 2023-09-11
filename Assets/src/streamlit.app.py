@@ -39,7 +39,7 @@ def calculate_on_net_reg_ratio(on_net, regularity):
 
 # Set up home page
 def home_page():
-    st.title('EXPRESSO CHURN PREDICTION APP BY TEAM ZURICH')
+    st.title('EXPRESSO CUSTOMER CHURN PREDICTION APP')
     exp_url = "https://github.com/elvis-darko/Team_Zurich_Capstone_Project/raw/main/Assets/images/expresso.png"
     st.image(exp_url, caption='Team Zurich Churn Prediction App', use_column_width=True)
     st.write("""<h2>Welcome to Expresso Churn Prediction App developed by Team Zurich!</h2>""", unsafe_allow_html=True)
@@ -61,6 +61,13 @@ def home_page():
 # Set up prediction page
 def prediction_page():
 
+    # Title of the page
+    st.title('Expresso Churn Prediction App by Team Zurich')
+
+    # Add the image using st.image
+    image_url = "https://github.com/elvis-darko/Team_Zurich_Capstone_Project/raw/main/Assets/images/cust_churn.jpg"
+    st.image(image_url, caption='Team Zurich Churn Prediction App', use_column_width=True)
+
     # Raw GitHub URL of your model
     model_url = "https://github.com/Preencez/Team_Zurich_Capstone_Project/raw/main/Assets/src/tuned_gb_model.joblib"
 
@@ -72,13 +79,6 @@ def prediction_page():
         tuned_gb_model = joblib.load("tuned_gb_model.joblib")
     else:
         st.error("Failed to load the model from GitHub.")
-
-    # Title of the app
-    st.title('Expresso Churn Prediction App by Team Zurich')
-
-    # Add the image using st.image
-    image_url = "https://github.com/elvis-darko/Team_Zurich_Capstone_Project/raw/main/Assets/images/cust_churn.jpg"
-    st.image(image_url, caption='Team Zurich Churn Prediction App', use_column_width=True)
 
 
     # Input form
