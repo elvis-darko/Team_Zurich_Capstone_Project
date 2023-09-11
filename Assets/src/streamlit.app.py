@@ -120,7 +120,7 @@ def prediction_page():
         prediction = tuned_gb_model.predict(input_features)
         prediction_probability = tuned_gb_model.predict_proba(input_features)[:, 1]  # Probability of churn
 
-        if prediction[0] == 0:
+        if prediction[0] == 1:
             st.image("https://creazilla-store.fra1.digitaloceanspaces.com/cliparts/65532/happy-emoji-clipart-md.png", use_column_width=True)
             st.write('Prediction: Not Churn')
             
