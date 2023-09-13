@@ -158,7 +158,7 @@ def prediction_page():
             
         else:
             # Handle the case where the prediction is churn
-            st.image("https://www.bing.com/images/search?view=detailV2&ccid=NomGYb2F&id=CFAB1B8951296B62ED3B4EDC7875A6AC9A9C2102&thid=OIP.NomGYb2FFUxlWnpSHC6Y4gHaHa&mediaurl=https%3a%2f%2ffiles.123freevectors.com%2fwp-content%2foriginal%2f33898-sad-face-emoji-vector.jpg&cdnurl=https%3a%2f%2fth.bing.com%2fth%2fid%2fR.36898661bd85154c655a7a521c2e98e2%3frik%3dAiGcmqymdXjcTg%26pid%3dImgRaw%26r%3d0&exph=3333&expw=3333&q=sad+emoji&simid=608004405752765317&FORM=IRPRST&ck=9B0C4D788378CB0CB7A59FBF9C10D4EB&selectedIndex=7", use_column_width=True)  # Replace with an appropriate churn image
+            st.image("https://github.com/elvis-darko/Team_Zurich_Capstone_Project/raw/main/Assets/images/churn_pic.png", use_column_width=True)  # Replace with an appropriate churn image
             st.write('Prediction: Churn')
             
             # Display churn probability score
