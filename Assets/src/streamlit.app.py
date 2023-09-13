@@ -21,7 +21,7 @@ css_style = {
     "icon": {"color": "white"},
     "nav-link": {"--hover-color": "grey"},
     "nav-link-selected": {"background-color": "#FF4C1B"},
-# }
+}
 
 
 # Define functions to calculate values
