@@ -226,6 +226,6 @@ elif selected == "Developers":
 #     elif page== "Developers":
 #         developers_page()
 
-# # Run the app
-# if __name__ == "__main__":
-#     main()
+# Run the app
+if __name__ == "__selected__":
+    selected()
