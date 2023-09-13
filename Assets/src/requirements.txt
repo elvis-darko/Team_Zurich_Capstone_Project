@@ -100,9 +100,9 @@ smmap
 sniffio
 stack-data
 starlette
+streamlit-option-menu
 stqdm
 streamlit
-streamlit-option-menu
 sympy
 tenacity
 threadpoolctl
