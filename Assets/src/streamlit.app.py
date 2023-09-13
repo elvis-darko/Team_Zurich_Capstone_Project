@@ -185,7 +185,7 @@ def developers_page():
     </ul>
     """, unsafe_allow_html=True)
 
-# # # Set up option menu (side bar)
+# Set up option menu (side bar)
 # with st.sidebar:
 #     cust_url = "https://github.com/elvis-darko/Team_Zurich_Capstone_Project/raw/main/Assets/images/expresso.jpg"
 #     st.image(cust_url, use_column_width=True)
