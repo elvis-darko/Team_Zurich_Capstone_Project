@@ -6,21 +6,21 @@ import matplotlib.pyplot as plt
 import requests
 from PIL import Image
 
-# # Set style of page
-# st.set_page_config(page_title="EXPRESSO CUSTOMER CHURN PREDICTION APP", page_icon="GH", initial_sidebar_state="expanded")
+# Set style of page
+st.set_page_config(page_title="EXPRESSO CUSTOMER CHURN PREDICTION APP", page_icon="GH", initial_sidebar_state="expanded")
 
-# hide_streamlit_style = """
-#             <style>
-#             #MainMenu {visibility: hidden;}
-#             footer {visibility: hidden;}
-#             </style>
-#             """
-# st.markdown(hide_streamlit_style, unsafe_allow_html=True)
+hide_streamlit_style = """
+            <style>
+            #MainMenu {visibility: hidden;}
+            footer {visibility: hidden;}
+            </style>
+            """
+st.markdown(hide_streamlit_style, unsafe_allow_html=True)
 
-# css_style = {
-#     "icon": {"color": "white"},
-#     "nav-link": {"--hover-color": "grey"},
-#     "nav-link-selected": {"background-color": "#FF4C1B"},
+css_style = {
+    "icon": {"color": "white"},
+    "nav-link": {"--hover-color": "grey"},
+    "nav-link-selected": {"background-color": "#FF4C1B"},
 # }
 
 
@@ -186,46 +186,46 @@ def developers_page():
     """, unsafe_allow_html=True)
 
 # Set up option menu (side bar)
-# with st.sidebar:
-#     cust_url = "https://github.com/elvis-darko/Team_Zurich_Capstone_Project/raw/main/Assets/images/expresso.jpg"
-#     st.image(cust_url, use_column_width=True)
-#     selected = option_menu(
-#         menu_title=None,
-#         options=["Home", "Prediction", "Developers"],
-#         icons=["house", "droplet", "people"],
-#         styles=css_style
-#    )
+with st.sidebar:
+    cust_url = "https://github.com/elvis-darko/Team_Zurich_Capstone_Project/raw/main/Assets/images/expresso.jpg"
+    st.image(cust_url, use_column_width=True)
+    selected = option_menu(
+        menu_title=None,
+        options=["Home", "Prediction", "Developers"],
+        icons=["house", "droplet", "people"],
+        styles=css_style
+   )
     
 
-# if selected == "Home":
-#     home_page()
+if selected == "Home":
+    home_page()
 
-# elif selected == "Prediction":
-#     prediction_page()
+elif selected == "Prediction":
+    prediction_page()
 
-# elif selected == "Developers":
-#     developers_page()
+elif selected == "Developers":
+    developers_page()
 
-with st.sidebar:
-     cust_url = "https://github.com/elvis-darko/Team_Zurich_Capstone_Project/raw/main/Assets/images/expresso.jpg"
-     st.image(cust_url, use_column_width=True)
+# with st.sidebar:
+#      cust_url = "https://github.com/elvis-darko/Team_Zurich_Capstone_Project/raw/main/Assets/images/expresso.jpg"
+#      st.image(cust_url, use_column_width=True)
 
 
-# App entry point
-def main():
-    # Render the welcome page by default
-    page = st.sidebar.radio("Main Menu", ("Home", "Prediction", "Developers"))
+# # App entry point
+# def main():
+#     # Render the welcome page by default
+#     page = st.sidebar.radio("Main Menu", ("Home", "Prediction", "Developers"))
 
-    # Configure page settings
-    if page == "Home":
-        home_page()
+#     # Configure page settings
+#     if page == "Home":
+#         home_page()
 
-    elif page == "Prediction":
-        prediction_page()
+#     elif page == "Prediction":
+#         prediction_page()
 
-    elif page== "Developers":
-        developers_page()
+#     elif page== "Developers":
+#         developers_page()
 
-# Run the app
-if __name__ == "__main__":
-    main()
+# # Run the app
+# if __name__ == "__main__":
+#     main()
