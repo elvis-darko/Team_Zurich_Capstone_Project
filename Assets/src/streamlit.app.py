@@ -159,7 +159,7 @@ def prediction_page():
         else:
             # Handle the case where the prediction is churn
             churn_pic = "https://github.com/elvis-darko/Team_Zurich_Capstone_Project/raw/main/Assets/images/churn_pic.jpg"
-            st.image(churn_pic, use_column_width=True)  # Replace with an appropriate churn image
+            st.image(churn_pic, use_column_width=True) 
             st.write('Prediction: Churn')
             
             # Display churn probability score
