@@ -4,7 +4,7 @@ joblib
 numpy
 pandas
 shap
-streamlit
+streamlit==1.2.2
 scikit-learn
 matplotlib
 shap
