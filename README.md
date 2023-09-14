@@ -98,19 +98,14 @@ A streamlit app was added for further exploration of the model. The streamlit ap
 
 ## Run FastAPI
 
-- Run the demo apps (being at the repository root):
+- Run the FastAPI apps (being at the repository root) on a terminal :
         
   FastAPI:
     
     - Demo
 
-          uvicorn src.demo_01.api:main --reload 
+          uvicorn src.main.api:fastapi_app --reload 
 
-
-
-  - Go to your browser at the following address, to explore the api's documentation :
-        
-      http://127.0.0.1:8000/docs
 
 
 # EVALUATION
