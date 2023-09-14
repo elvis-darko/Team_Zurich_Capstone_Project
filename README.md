@@ -21,25 +21,27 @@ The complete dataset  can be found and downloaded from Zindi: [Zindi Churn Chall
 **Test data :** This is similar to the train data but without the Churn column. We will use this file to test our model.
 
 The dataset has 19 variables. Below are the definitions of variables found in the datasets:<br />
-`user_id` A  unique identification number of a client<br />
-`REGION` The location of each client<br />
-`TENURE` Duration of the network usage<br />
-`MONTANT` The top-up amount<br />
-`FREQUENCE_RECH` The number of times the customer refilled<br />
-`REVENUE`The monthly income of each client<br />
-`ARPU_SEGMENT`Income over 90 days / 3<br />
-`FREQUENCE` The number of times the client has made an income<br />
-`DATA_VOLUME` The number of connections<br />
-`ON_NET`Inter Expresso calls<br />
-`ORANGE`calls to Orange network<br />
-`TIGO`calls to Tigo network<br />
-`ZONE1` calls to zones1<br />
-`ZONE2`calls to zones2<br />
-`MRG`a client who is going<br />
-`REGULARITY`The number of times the client is active for 90 days<br />
-`TOP_PACK`the most active packs<br />
-`FREQ_TOP_PACK`The number of times the client has activated the top pack packages<br />
-`CHURN` Whether a client still patronizes the network or not. This is the variable to predict - (Target Variable)<br />
+|VARAIABLE|DEFINITION|FEATURE|
+|---------|----------|---------|
+|`user_id`| A  unique identification number of a client|Numeric|
+|`REGION` |The location of each client|Categorical|
+|`TENURE` |Duration of the network usage|Numeric|
+|`MONTANT` |The top-up amount|Numeric|
+|`FREQUENCE_RECH`| The number of times the customer refilled|Numeric|
+|`REVENUE`|The monthly income of each client|Numeric|
+|`ARPU_SEGMENT`|Income over 90 days / 3|Numeric|
+|`FREQUENCE`| The number of times the client has made an income|Numeric|
+|`DATA_VOLUME`| The number of connections|Numeric|
+|`ON_NET`|Inter Expresso calls|Numeric|
+|`ORANGE`|calls to Orange network|Numeric|
+|`TIGO`|calls to Tigo network|Numeric|
+|`ZONE1`| calls to zones1|Numeric|
+|`ZONE2`|calls to zones2|Numeric|
+|`MRG`|a client who is going|Categorical|
+|`REGULARITY`|The number of times the client is active for 90 days|Numeric|
+|`TOP_PACK`|The most active packs|Categorical|
+|`FREQ_TOP_PACK`|The number of times the client has activated the top pack packages|Numeric|
+|`CHURN`| Whether a client still patronizes the network or not. This is the variable to predict (Target Variable)|Binary|
 
 
 
