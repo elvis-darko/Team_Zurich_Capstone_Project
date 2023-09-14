@@ -8,11 +8,11 @@ This solution will help this telecom company to better serve their customers by 
 ## SUMMARY
 | Code      | Name        | Published Article |  Deployed App |
 |-----------|-------------|:-------------|:------|
-|CP         | CUSTOMER CHURN PREDICTION  |           | STREAMLIT<br />FAST API|
+|CP         | EXPRESSO CUSTOMER CHURN PREDICTION  |           | [STREAMLIT](https://teamzurich.streamlit.app/)<br />[HUGGING FACE]|
 
 
 
-## NOTES ON DATASETS
+# NOTES ON DATASETS
 The complete dataset  can be found and downloaded from Zindi: [Zindi Churn Challenge](https://zindi.africa/competitions/customer-churn-prediction-challenge-for-azubian)
 <br />
 
@@ -45,19 +45,23 @@ The dataset has 19 variables. Below are the definitions of variables found in th
 
 
 
-## SCREESHOTS OF DEPLOYED APP
+# SCREESHOTS OF DEPLOYED APP
 ![Alt text](image-1.png)
 
 
 
 
-## SETUP
+# SETUP
 It is recommended to have Virtual Studio Code or any other standard code editor on your local machine.<br />Install the required packages locally to your computer.
 
 It is recommended that you run a python version 3.0 and above. 
 You can download the required python version from [here](https://www.python.org/downloads/).
 
 Use these recommended steps to set up your local machine for this project:
+
+1. **Clone the repo :** To clone this repo, copy the url and paste it in your GitHub desktop or code editor on your local machine.
+        
+        https://github.com/elvis-darko/Team_Zurich_Capstone_Project.git
 
 1. **Create the Python's virtual environment :** <br />This will isolate the required libraries of the project to avoid conflicts.<br />Choose any of the line of code that will work on your local machine.
 
@@ -83,6 +87,7 @@ Use these recommended steps to set up your local machine for this project:
 
             python -m pip install -r requirements.txt 
 
+# MACHINE LEARNING MODEL DEPLOYMENT
 ## Run Streamlit App
 A streamlit app was added for further exploration of the model. The streamlit app provides a simple Graphic User Interface where predicitons can be made from inputs.
 
@@ -108,7 +113,7 @@ A streamlit app was added for further exploration of the model. The streamlit ap
       http://127.0.0.1:8000/docs
 
 
-## EVALUATION
+# EVALUATION
 The evaluation metric for this challenge is Area Under the Curve (AUC).
 
 The values can be between 0 and 1, inclusive. Where 1 indicates the customer churned and 0 indicates the customer stayed with Expresso.
@@ -121,7 +126,7 @@ Our final work would look like this:
             000081dd3245e6869a4a9c574c7050e7bb84c2c8      0.37
 
 
-## Resources
+# RESOURCES
 Here are some ressources you would read to have a good understanding of tools, packages and concepts used in the project:
 - [Tutorial - User Guide](https://fastapi.tiangolo.com/tutorial/)
 - [Video - Building a Machine Learning API in 15 Minutes ](https://youtu.be/C82lT9cWQiA)
