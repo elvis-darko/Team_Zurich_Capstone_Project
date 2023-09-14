@@ -147,4 +147,4 @@ Here are some ressources you would read to have a good understanding of tools, p
 |RICHMOND E.Y. ABAKE|GHANA| richie.abake@gmail.com |
 |RICHMOND TETTEH| GHANA|  |
 |JOSEPH GIKUBU| KENYA|gikubujoseph@outlook.com|
-|MARIE GRACE KAGAJU |  RWANDA |   |
+|MARIE GRACE KAGAJU |  RWANDA |  kagajugrace@gmail.com |
