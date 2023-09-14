@@ -46,7 +46,7 @@ The dataset has 19 variables. Below are the definitions of variables found in th
 
 
 ## SCREESHOTS OF DEPLOYED APP
-![Alt text](image.png)
+![Alt text](image-1.png)
 
 
 
