@@ -4,8 +4,8 @@ joblib
 numpy
 pandas
 shap
-streamlit==1.2.2
-scikit-learn
+streamlit
+scikit-learn==1.2.2
 matplotlib
 shap
 fastapi[all]
