@@ -6,8 +6,8 @@ This project is for an African telecommunications company that provides customer
 This solution will help this telecom company to better serve their customers by understanding which customers are at risk of leaving.
 
 ## SUMMARY
-| Code      | Name        | Published Article |  Deployed App |
-|-----------|-------------|:-------------|:------|
+| Code      | Name        |   Deployed App |
+|-----------|-------------|:------|
 |CP         | EXPRESSO CUSTOMER CHURN PREDICTION  |           | [STREAMLIT](https://teamzurich.streamlit.app/)|
 
 
