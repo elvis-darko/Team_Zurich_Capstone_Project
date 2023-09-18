@@ -8,7 +8,7 @@ This solution will help this telecom company to better serve their customers by 
 ## SUMMARY
 | Code      | Name        | Published Article |  Deployed App |
 |-----------|-------------|:-------------|:------|
-|CP         | EXPRESSO CUSTOMER CHURN PREDICTION  |           | [STREAMLIT](https://teamzurich.streamlit.app/)<br />[HUGGING FACE]|
+|CP         | EXPRESSO CUSTOMER CHURN PREDICTION  |           | [STREAMLIT](https://teamzurich.streamlit.app/)|
 
 
 
@@ -46,10 +46,10 @@ The dataset has 19 variables. Below are the definitions of variables found in th
 
 
 # SCREESHOTS OF DEPLOYED APP
-![Alt text](image-1.png)
-
-
-
+![Alt text](image-2.png)
+![Alt text](image-3.png)
+![Alt text](image-4.png)
+![Alt text](image-5.png)
 
 # SETUP
 It is recommended to have Virtual Studio Code or any other standard code editor on your local machine.<br />Install the required packages locally to your computer.
@@ -104,7 +104,7 @@ A streamlit app was added for further exploration of the model. The streamlit ap
     
     - Demo
 
-          uvicorn src.main.api:fastapi_app --reload 
+          uvicorn main.api:fastapi_app --reload 
 
 
 
