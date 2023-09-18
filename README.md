@@ -96,18 +96,6 @@ A streamlit app was added for further exploration of the model. The streamlit ap
         Streamlit run streamlit.app.py
 
 
-## Run FastAPI
-
-- Run the FastAPI apps (being at the repository root) on a terminal :
-        
-  FastAPI:
-    
-    - Demo
-
-          uvicorn main.api:fastapi_app --reload 
-
-
-
 # EVALUATION
 The evaluation metric for this challenge is Area Under the Curve (AUC).
 

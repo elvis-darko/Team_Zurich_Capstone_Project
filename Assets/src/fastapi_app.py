@@ -10,7 +10,7 @@ model_path = r'D:\Projects\Team_Zurich_Capstone_Project\Assets\src\tuned_gb_mode
 tuned_gb_model = joblib.load(model_path)
 
 # Create a FastAPI app
-app = FastAPI()
+app = FastAPI(debug=True)
 
 class InputFeatures(BaseModel):
     tenure: int
