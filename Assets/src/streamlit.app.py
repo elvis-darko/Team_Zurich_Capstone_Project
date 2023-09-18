@@ -152,7 +152,7 @@ def prediction_page():
             st.write("Thank you for choosing to stay with us. We truly value your business, Your loyalty means a lot to us, and we're here to serve you")
             st.write("1. Kindly consider subscribing to our loyalty program for exclusive benefits.")
             st.write("2. Explore our new product offerings for additional benefits")
-            st.write("3. Unlock personalized recommendations and tailored experiences as a loyalty program member. We'll cater to your preferences and needs like never before.")
+            st.write("3. Unlock personalized recommendations and tailored experiences as a loyalty program member. We'll cater  for your preferences and needs like never before.")
             st.write("4. Get an exclusive sneak peek at upcoming features or products. You can even participate in beta testing and help shape our future offerings.")
             st.write("5. Accumulate rewards points with every purchase, which you can redeem for exciting prizes, discounts, or even free products.")
             
@@ -178,13 +178,13 @@ def developers_page():
     <ul>
         <li>Elvis Darko</li>
         <li>Faith Berida</li>
-        <li>Richmond E.Y. Abake</li>
+        <li>Richmond Elikplim Yao Abake</li>
         <li>Joseph Gikubu</li>
         <li>Richmond Tetteh</li>
         <li>Marie Grace Kagaju</li>
     </ul>
     """, unsafe_allow_html=True)
-
+ 
 # Set up option menu (side bar)
 with st.sidebar:
     cust_url = "https://github.com/elvis-darko/Team_Zurich_Capstone_Project/raw/main/Assets/images/expresso.jpg"
