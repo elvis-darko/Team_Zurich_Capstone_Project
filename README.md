@@ -111,14 +111,9 @@ Our final work would look like this:
 
 # RESOURCES
 Here are some ressources you would read to have a good understanding of tools, packages and concepts used in the project:
-- [FastAPI Tutorial - User Guide](https://fastapi.tiangolo.com/tutorial/)
-- [Video - Building a Machine Learning API in 15 Minutes ](https://youtu.be/C82lT9cWQiA)
-- [Video - Deploy ML models with FastAPI, Docker, and Heroku ](https://www.youtube.com/watch?v=h5wLuVDr0oc)
-- [FastAPI Tutorial Series - videos](https://www.youtube.com/watch?v=tKL6wEqbyNs&list=PLShTCj6cbon9gK9AbDSxZbas1F6b6C_Mx)
-- [Http status codes](https://www.linkedin.com/feed/update/urn:li:activity:7017027658400063488?utm_source=share&utm_medium=member_desktop)
-- [Getting Started With Hugging Face in 15 Minutes](https://www.youtube.com/watch?v=QEaBAZQCtwE)
-- Dockerize your Streamlit app to get it ready to be deployed to any cloud hub. [Watch this](https://www.youtube.com/watch?v=f6zJwK-pCJo)
-- [Getting started with Hugging Face](https://huggingface.co/docs)
+- [How to improve machine learning models](https://neptune.ai/blog/improving-ml-model-performance)
+- [Machine Learning tutorial - A step by step guide](https://github.com/eaedk/Machine-Learning-Tutorials/blob/main/ML_Step_By_Step_Guide.ipynb)
+- [Create user interfaces for machine learning models](https://www.youtube.com/watch?v=RiCQzBluTxU)
 - [Getting started with Streamlit](https://docs.streamlit.io/library/get-started)
 
 
