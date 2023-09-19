@@ -8,7 +8,7 @@ This solution will help this telecom company to better serve their customers by 
 ## SUMMARY
 | Code      | Name        |   Deployed App |
 |-----------|-------------|:------|
-|CP         | EXPRESSO CUSTOMER CHURN PREDICTION  | [STREAMLIT](https://teamzurich.streamlit.app/)|
+|CP         | EXPRESSO CUSTOMER CHURN PREDICTION  | [STREAMLIT APP](https://teamzurich.streamlit.app/)|
 
 
 
