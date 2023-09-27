@@ -117,8 +117,8 @@ def prediction_page():
                                     total_recharge, avg_revenue_montant, 
                                     frequence_squared, on_net_reg_ratio]])
         
-        prediction = model_url.predict(input_features)
-        prediction_probability = model_url.predict_proba(input_features)[:, 1]  # Probability of churn
+        prediction = tuned_gb_model.predict(input_features)
+        prediction_probability = tuned_gb_model.predict_proba(input_features)[:, 1]  # Probability of churn
 
         if prediction[0] == 0:
             st.image("https://creazilla-store.fra1.digitaloceanspaces.com/cliparts/65532/happy-emoji-clipart-md.png", use_column_width=True)
@@ -132,7 +132,7 @@ def prediction_page():
             st.write(f'Accuracy Score: {accuracy:.2f}')
             
             # Display feature importance as a bar chart
-            feature_importance = model_url.feature_importances_
+            feature_importance = tuned_gb_model.feature_importances_
             feature_names = ["tenure", "montant", "frequence_rech", "revenue", "arpu_segment",
                             "frequence", "data_volume", "on_net", "orange", "tigo",
                             "zone1", "zone2", "regularity", "freq_top_pack", "total_recharge",
