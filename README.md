@@ -46,10 +46,10 @@ The dataset has 19 variables. Below are the definitions of variables found in th
 
 
 # SCREESHOTS OF DEPLOYED APP
-![Alt text](image-2.png)
-![Alt text](image-3.png)
-![Alt text](image-4.png)
-![Alt text](image-5.png)
+imgage_2 = "https://github.com/elvis-darko/Team_Zurich_Capstone_Project/raw/main/Assets/images/image-2.png"
+imgage_3 = "https://github.com/elvis-darko/Team_Zurich_Capstone_Project/raw/main/Assets/images/image-3.png"
+imgage_4 = "https://github.com/elvis-darko/Team_Zurich_Capstone_Project/raw/main/Assets/images/image-4.png"
+imgage_5 = "https://github.com/elvis-darko/Team_Zurich_Capstone_Project/raw/main/Assets/images/image-5.png"
 
 # SETUP
 It is recommended to have Virtual Studio Code or any other standard code editor on your local machine.<br />Install the required packages locally to your computer.
