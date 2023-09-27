@@ -76,7 +76,7 @@ def prediction_page():
     if response.status_code == 200:
         with open("tuned_gb_model.joblib", "wb") as f:
             f.write(response.content)
-        tuned_gb_model = joblib.load(model_url)
+        tuned_gb_model = joblib.load("tuned_gb_model.joblib")
     else:
         st.error("Failed to load the model from GitHub.")
 
