@@ -51,7 +51,7 @@ imgage_3 = "https://github.com/elvis-darko/Team_Zurich_Capstone_Project/raw/main
 imgage_4 = "https://github.com/elvis-darko/Team_Zurich_Capstone_Project/raw/main/Assets/images/image-4.png"
 imgage_5 = "https://github.com/elvis-darko/Team_Zurich_Capstone_Project/raw/main/Assets/images/image-5.png"
 "
-![Alt text](image-2.png) = "https://github.com/elvis-darko/Team_Zurich_Capstone_Project/raw/main/Assets/images/image-2.png"
+!["https://github.com/elvis-darko/Team_Zurich_Capstone_Project/raw/main/Assets/images/image-2.png"](image-2.png) 
 ![Alt text](image-3.png)
 ![Alt text](image-4.png)
 ![Alt text](image-5.png)
